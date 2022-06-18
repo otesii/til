@@ -1,4 +1,4 @@
-## todo list
+## todo
 - [PHPオブジェクト指向入門（前半）](https://qiita.com/mpyw/items/41230bec5c02142ae691)
 
 ## done
