@@ -3,9 +3,5 @@
 
 ## 勉強記録
 
-### 2022/06/11 
-done
-- [WSL2のubuntuにapacheとphpをインストールしてバージョン管理](https://zenn.dev/sakots/articles/a4217c84e10a41)
-
 ### 2022/06/11 tilリポジトリ作成
 
