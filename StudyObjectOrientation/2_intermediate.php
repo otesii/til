@@ -13,13 +13,13 @@ class IntermediateRobot
         $this->setName($name);
     }
 
-    // getter
+    // setter
     public function setName(string $name)
     {
         $this->name = $name;
     }
 
-    // setter
+    // getter
     public function getName()
     {
         return $this->name;
@@ -29,5 +29,26 @@ class IntermediateRobot
 $a = new IntermediateRobot('ロボ太郎');  // コンストラクタが自動でコールされるので$nameを渡す必要がある
 $b = new IntermediateRobot('ロゴ次郎');
 
-print($a->getName());
-print($b->getName());
+print($a->getName()."\n");
+print($b->getName()."\n");
+
+
+/////////////////////////////////
+// stdClassについて
+/////////////////////////////////
+
+$c = new stdClass();  // stdClassでは未定義のインスタンスプロパティを生成可能
+$c->name = 'ロボ三郎';
+print($c->name. "\n");
+
+
+// インスタンスは配列に変換可能
+// array(1) {["name"]=>string(12) "ロボ三郎"}
+$c_array = (array)$c;
+var_dump($c_array);
+
+
+// インスタンス化していればstdClass以外も配列化できるが、キー名にクラス名+インスタンスプロパティ名になるため使いにくい
+// array(1) {["IntermediateRobothogename"]=>string(12) "ロボ太郎"}
+$a_array = (array)$a;
+var_dump($a_array);

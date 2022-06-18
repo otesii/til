@@ -8,13 +8,13 @@ class BeginnerRobot
     // private変数にするとクラス外から参照不可
     private $name = '';
 
-    // getter
+    // setter
     public function setName(string $name)
     {
         $this->name = $name;
     }
 
-    // setter
+    // getter
     public function getName()
     {
         return $this->name;
@@ -25,10 +25,10 @@ class BeginnerRobot
 // $this->setName('ロボ子');
 // print($this->getName());
 
-$a = new BeginnerRobot; // インスタンス化
+$a = new BeginnerRobot(); // インスタンス化
 $a->setName('ロボ太郎');
 
-$b = new BeginnerRobot; // インスタンス化
+$b = new BeginnerRobot(); // インスタンス化
 $b->setName('ロゴ次郎');
 
 print($a->getName());
